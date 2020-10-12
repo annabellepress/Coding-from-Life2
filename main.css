@@ -1,0 +1,287 @@
+/*
+  Coding from Life – Sketch 2: fluid layout
+
+  For sketch 2 you'll be positioning elements relative to a fluid container. This
+  means you'll need to use percentages when positioning and sizingelements within
+  your frame.
+*/
+
+
+body {
+  background-color: grey;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: #f1e6e6;
+  margin: 2.5vw auto;
+  position: relative;
+}
+
+.tabletop {
+  position: relative;
+  width: 95vw;
+  height: 20vw;
+  background: white;
+  top: 37vw;
+}
+.tablebottom {
+  position: relative;
+  width: 95vw;
+  height: 4vw;
+  background: gainsboro;
+  top: 37vw;
+}
+.mirror {
+  position: relative;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 50vw;
+  background: #d6d6d6;
+  bottom: 45vw;
+  left: 46vw; 
+}
+.mirrorframe {
+  position: relative;
+  width: 24vw;
+  height: 24vw;
+  border-radius: 50vw;
+  background: #d6c6ad;
+  left: 45vw;
+  bottom: 22vw;
+}
+.back-squash {
+  position: relative;
+  width: 12vw;
+  height: 7vw;
+  border-radius: 70vw;
+  background: #e0d678;
+  left: 45vw;
+  top: -194vw;
+  z-index: 0;
+}
+.front-squash {
+  position: relative;
+  width: 11vw;
+  height: 6vw;
+  border-radius: 70vw;
+  background: khaki;
+  left: 50vw;
+  top: -190vw;
+  z-index: 4;
+  transform: rotate(-4deg);
+}
+.vase {
+  position: relative;
+  width: 8vw;
+  height: 16vw;
+  background: lightsteelblue;
+  opacity: 0.3;
+  top: -90vw;
+  left: 48vw;
+  z-index: 4;
+  border-bottom-right-radius: 5vw;
+  border-bottom-left-radius: 5vw;
+}
+.flowers {
+  z-index: 3;
+}
+.stem1 {
+  position: relative;
+  width: 0.65vw;
+  height: 20vw;
+  background: seagreen;
+  top: -109.5vw;
+  left: 50vw;
+  border-radius: 12vw;
+  transform: rotate(-14deg);
+  z-index: 3;
+}
+.stem2 {
+  position: relative;
+  width: 0.65vw;
+  height: 19vw;
+  background: seagreen;
+  top: -129.5vw;
+  left: 51vw;
+  border-radius: 12vw;
+  transform: rotate(-8deg);
+  z-index: 3;
+}
+.stem3 {
+ position: relative;
+ width: 0.45vw;
+ height: 20vw;
+ background: seagreen;
+ top: -149vw;
+ left: 54vw;
+ border-radius: 12vw;
+ transform: rotate(12deg);
+ z-index: 3;
+}
+.stem4 {
+  position: relative;
+  width: 0.65vw;
+  height: 17vw;
+  background: seagreen;
+  top:-167.5vw;
+  left: 54vw;
+  border-radius: 12vw;
+  transform: rotate(4deg);
+  z-index: 3;
+}
+.bud1 {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  background: tomato;
+  border-radius: 50vw;
+  left: 45.5vw;
+  top: -188vw;
+  z-index: 3;
+}
+.bud2 {
+  position: relative;
+  width: 2.75vw;
+  height: 2.75vw;
+  border-radius: 50vw;
+  background: orangered;
+  left: 48.5vw;
+  top: -192vw;
+  z-index: 3;
+}
+.bud3 {
+    position: relative;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50vw;
+    background: orangered;
+    left: 51.5vw;
+    top: -195vw;
+    z-index: 3;
+}
+.bud4 {
+    position: relative;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50vw;
+    background: tomato;
+    left: 54.5vw;
+    top: -200vw;
+    z-index: 3;
+}
+.pumpkin {
+  position: relative;
+  width: 15vw;
+  height: 14vw;
+  border-radius: 50vw;
+  bottom: 210vw;
+  right: -63vw;
+  background: tomato;
+  z-index: 5;
+}
+.pumpkin-stem {
+  position: relative;
+  width: 1.75vw;
+  height: 3.25vw;
+  bottom: 225vw;
+  left: 69.5vw;
+  border-radius: 45vw;
+  background: tan;
+  z-index: 6;
+}
+
+.container {
+    position: relative;
+    width: 16vw;
+    height: 15vw;
+    background: #71513b;
+    bottom: 224vw;
+    left: 15vw;
+    border-radius: 50vw / 100vw;
+}
+.detail1 {
+    position: relative;
+    width: 15.5vw;
+    height: 3vw;
+    background: #5f4838;
+    bottom: 239vw;
+    left: 15.25vw;
+    border-radius: 15vw
+}
+.detail2 {
+    position: relative;
+    width: 13.5vw;
+    height: 1.3vw;
+    background: #5f4838;
+    bottom: 228vw;
+    left: 16vw;
+    border-radius: 35vw;
+}
+.detail3 {
+    position: relative;
+    width: 2.5vw;
+    height: 2.5vw;
+    background: #4a382c;
+    bottom: 244vw;
+    left: 21.5vw;
+    border-radius: 35vw;
+}
+.base {
+  position: relative;
+  width: 6vw;
+  height: 2vw;
+  border-style: solid;
+  border-color: goldenrod;
+  border-width: 0.75vw;
+  border-radius: 100vw / 50vw;
+  top: -24vw;
+  left: 38vw;
+}
+.base2 {
+  position: relative;
+  width: 6vw;
+  height: 2vw;
+  border-style: solid;
+  border-color: goldenrod;
+  border-width: 0.75vw;
+  border-radius: 100vw / 50vw;
+  top: -30vw;
+  left: 56.5vw;
+}
+.rod {
+  position: relative;
+  width: 0.75vw;
+  height: 12vw;
+  background: goldenrod;
+  top: -41vw;
+  left: 41vw;
+}
+.rod2 {
+  position: relative;
+  width: 0.75vw;
+  height: 18vw;
+  background: goldenrod;
+  top: -60vw;
+  left: 59.5vw;
+}
+.wax {
+  position: relative;
+  width: 3vw;
+  height: 5vw;
+  background: beige;
+  top: -76vw;
+  left: 398px
+}
+.wax2 {
+  position: relative;
+  width: 3vw;
+  height: 8vw;
+  background: beige;
+  top: -90vw;
+  left: 58.5vw;
+}
+
+
+/* Your CSS goes here */
